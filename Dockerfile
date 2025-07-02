@@ -32,7 +32,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 
 # Install Python dependencies
 RUN pip install --upgrade pip && \
-    pip install joblib==1.4.2 numpy==2.2.2 pandas==2.2.3 scikit-learn==1.4.2
+    pip install joblib==1.5.1 numpy==2.2.6 pandas==2.3.0 scikit-learn==1.7.0
 
 # Set the working directory in the container
 WORKDIR /srv/shiny-server/

@@ -16,17 +16,17 @@ library(zoo)
 library(reticulate)
 
 # Uncomment for local machine
-# use_virtualenv("/Users/wesleykim/.virtualenvs/r-reticulate", required = TRUE) 
+reticulate::use_condaenv("/Users/wesleykim/miniforge3/envs/ucsb-baseball", required = TRUE)
 
 # Uncomment for Docker
 # use_virtualenv("/opt/venv", required = TRUE) 
 
 # Uncomment for hosting on shinyapps.io
-py_install(c(
-  "joblib==1.4.2",
-  "numpy==2.2.2",
-  "pandas==2.2.3",
-  "scikit-learn==1.4.2"))
+# py_install(c(
+#   "joblib==1.5.1",
+#   "numpy==2.2.6",
+#   "pandas==2.3.0",
+#   "scikit-learn==1.7.0"))
 
 ultimate <- read.csv("Ultimate_UCSB_25-(full).csv")
 
